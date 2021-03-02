@@ -1,17 +1,15 @@
 // Import the React and ReactDom Libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
+import faker from "faker";
+import CommentDetail from "./CommentDetail";
 
 // Create a react component
 const App = () => {
-  const buttonText = 'Touch My Button!';
-
   return (
-   <div>
-    <label className="label" for="name">Enter name: </label>
-    <input id="name" type="text"/>
-    <button style={{backgroundColor: 'salmon', color: 'blue'}}>{buttonText}</button>
-  </div>
+    <div className="ui container comments">
+      <CommentDetail />
+    </div>
   );
 };
 
